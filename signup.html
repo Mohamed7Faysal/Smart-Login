@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="shortcut icon" href="icons/signup.jpg" type="image/x-icon" />
+    
+    <!-- ================   fontawesome css  ================ -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ================   bootstrap css  ================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ================   main-file-css  ================-->
+    <link rel="stylesheet" href="css/signup.css" />
+
+  </head>
+  <body>
+    <!--================   Start signup Section  ================-->
+    <div class="container d-flex h-100 justify-content-center align-items-center">
+      <div class="row ">
+        <div class=" col-sm-6">
+          <div class="box">
+            <div class=" form d-flex flex-column " >
+              <h2>Smart Login System</h2>
+              <div class="inputBox">
+                <input type="text" required id="userName" >
+                <span>Enter your Name</span>
+                <i></i>
+              </div>
+
+              <div class="inputBox">
+                <input type="email" required id="email"  oninvalid="validationEmail( this , 'msgEmail')" >
+                <span>Enter your Email</span>
+                <i></i>
+                
+              </div>
+              <p id="msgEmail" class="alert alert-danger d-none ">
+                invalid-email, example@example.com
+              </p>
+
+              <div class="inputBox">
+                <input type="password" required id="password" >
+                <span>Enter your Password</span>
+                <i></i>
+              </div>
+              <div id="required"></div>
+              <input type="submit" value="SignUp" onclick=" addUserFinaly()" >
+              <div class="link d-flex justify-content-between ">
+                <p>You have an account?</p><a href="index.html" id="logIn" >logIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================   End signup Section  ================-->
+
+    <!-- ================   bootstrap js  ================-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ================   fontawesome js  ================ -->
+    <script src="js/all.min.js"></script>
+    <!-- ================   main-file-js  ================-->
+    <script src="js/signup.js"></script>
+  </body>
+</html>

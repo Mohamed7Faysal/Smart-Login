@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login System</title>
+    <link rel="shortcut icon" href="icons/login.jpg" type="image/x-icon" />
+
+    <!-- ================   fontawesome css  ================ -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ================   bootstrap css  ================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ================   main-file-css  ================-->
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <!--================   Start Login Section  ================-->
+    <div class="container d-flex h-100 justify-content-center align-items-center">
+      <div class="row ">
+        <div class=" col-sm-6">
+          <div class="box">
+            <div class=" form d-flex flex-column " >
+              <h2>Smart Login System</h2>
+              <div class="inputBox">
+                <input id="email" type="email" required >
+                <span>Enter Your Email</span>
+                <i></i>
+              </div>
+              <div class="inputBox">
+                <input id="password" type="password" required >
+                <span>Enter Your Password</span>
+                <i></i>
+              </div>
+              <div id="login_result"></div>
+              <input type="submit" value="LogIn" onclick="btn_login()" >
+              <div class="link d-flex justify-content-between ">
+                <p>Don’t have an account?</p><a href="#" id="signUp" >SignUp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================   End Login Section  ================-->
+
+    <!-- ================   bootstrap js  ================-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ================   fontawesome js  ================ -->
+    <script src="js/all.min.js"></script>
+    <!-- ================   main-file-js  ================-->
+    <script src="js/login.js"></script>
+  </body>
+</html>
