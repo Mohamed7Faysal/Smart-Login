@@ -3,10 +3,7 @@ document.getElementById("logOut").addEventListener('click', function(){
 })
 
 
-function welcome(){
-    document.getElementById("welcome").value = `welcome ${JSON.parse(localStorage.getItem("homeList"))}`;
-}
 
 window.onload = function() {
-    welcome();
+    document.getElementById("welcome").value = `welcome ${JSON.parse(localStorage.getItem("homeList"))}`;
 };
